@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VinLogg</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spinneRgrapesText">Välj druva</string>
+    <string name="save">Spara</string>
+    <string name="title_activity_add_side_two">com.example.vinlogg.AddSideTwoActivity</string>
+    <string name="PassWordCharacter">Lösenordet måste vara minst 6 tecken</string>
+</resources>

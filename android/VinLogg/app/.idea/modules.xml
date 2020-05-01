@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../VinLogg.iml" filepath="$PROJECT_DIR$/../VinLogg.iml" group="VinLogg" />
+      <module fileurl="file://$PROJECT_DIR$/VinLogg-app.iml" filepath="$PROJECT_DIR$/VinLogg-app.iml" group="VinLogg/app" />
+      <module fileurl="file://$PROJECT_DIR$/../android-VinLogg.iml" filepath="$PROJECT_DIR$/../android-VinLogg.iml" group="VinLogg" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="VinLogg/app" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/re"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustNothing"
+    android:background="@color/colorMainBackground">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:windowSoftInputMode="adjustNothing"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:windowSoftInputMode="adjustNothing">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="890dp">
+
+
+                <Button
+                    android:id="@+id/addNewWineBtnWineList"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#FFFFFF"
+                    android:text="Lägg till nytt vin"
+                   android:textColor="@color/colorlila"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/recyclerviewVineList"
+                    app:layout_constraintEnd_toStartOf="@+id/clearFilterBtnWineList"
+                    app:layout_constraintStart_toEndOf="@+id/wineListGrapesSpinner"
+                    app:layout_constraintTop_toBottomOf="@+id/wineListRegionSpinner" />
+
+                <EditText
+                    android:id="@+id/searchUserWineList"
+                    android:layout_width="350dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/shape_input_search_vine"
+                    android:ems="10"
+                    android:hint="Sök vin"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorlila"
+                    android:textColorHint="@color/colorlila"
+                    app:layout_constraintBottom_toTopOf="@+id/wineListCountrySpinner"
+                    app:layout_constraintEnd_toStartOf="@+id/wineListFilterBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/wineListFilterBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bottom_shape_navigation"
+                    android:text="Filter"
+                    android:textColor="@color/colorlila"
+                    app:layout_constraintBottom_toTopOf="@+id/wineListDistrictSpinner"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/searchUserWineList"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/wineListCountrySpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/shape_input_search_vine"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/wineListGrapesSpinner"
+                    app:layout_constraintEnd_toStartOf="@+id/wineListRegionSpinner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/searchUserWineList" />
+
+                <Spinner
+                    android:id="@+id/wineListRegionSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/shape_input_search_vine"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/addNewWineBtnWineList"
+                    app:layout_constraintEnd_toStartOf="@+id/wineListDistrictSpinner"
+                    app:layout_constraintStart_toEndOf="@+id/wineListCountrySpinner"
+                    app:layout_constraintTop_toBottomOf="@+id/searchUserWineList" />
+
+
+                <Spinner
+                    android:id="@+id/wineListDistrictSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/shape_input_search_vine"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/clearFilterBtnWineList"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/wineListRegionSpinner"
+                    app:layout_constraintTop_toBottomOf="@+id/wineListFilterBtn" />
+
+                <Spinner
+                    android:id="@+id/wineListGrapesSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/shape_input_search_vine"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/recyclerviewVineList"
+                    app:layout_constraintEnd_toStartOf="@+id/addNewWineBtnWineList"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wineListCountrySpinner" />
+
+                <Button
+                    android:id="@+id/clearFilterBtnWineList"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bottom_shape_navigation"
+                    android:text="Rensa filter"
+                    android:textColor="@color/colorlila"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/recyclerviewVineList"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/addNewWineBtnWineList"
+                    app:layout_constraintTop_toBottomOf="@+id/wineListDistrictSpinner" />
+
+
+                <TextView
+                    android:id="@+id/noWinesTexViw"
+                    android:layout_width="596dp"
+                    android:layout_height="98dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Inga viner i din källare"
+                    android:textAlignment="center"
+                    android:textColorHint="#975D0156"
+                    android:textSize="30sp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clearFilterBtnWineList" />
+
+
+                <ImageView
+                    android:id="@+id/imageViewSadIcon"
+                    android:layout_width="461dp"
+                    android:layout_height="416dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_sentiment_dissatisfied_black_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.631" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewVineList"
+                    android:windowSoftInputMode="adjustNothing"
+                    android:layout_width="594dp"
+                    android:layout_height="710dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clearFilterBtnWineList" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
+
+
+</RelativeLayout>

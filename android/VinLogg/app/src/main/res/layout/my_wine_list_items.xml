@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:padding="50dp"
+        android:paddingLeft="2dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewList"
+                    android:layout_width="94dp"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:outlineSpotShadowColor="@color/colorPrimary"
+                    android:paddingTop="20dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/vinebottle1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="465dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wineListWineName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:text="Name wine"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/wineListCountry"
+                                android:layout_width="84dp"
+                                android:layout_height="50dp"
+                                android:text="TextView >>"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/wineListRegion"
+                                android:layout_width="90dp"
+                                android:layout_height="50dp"
+                                android:text="TextView >>"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/wineListdistrict"
+                                android:layout_width="87dp"
+                                android:layout_height="50dp"
+                                android:text="TextView"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:id="@+id/wineListGrapes"
+                                    android:layout_width="453dp"
+                                    android:layout_height="40dp"
+                                    android:padding="1dp"
+                                    android:text="Druva"
+                                    android:textColor="@color/colorPrimary" />
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="81dp"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="17dp"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/textViewyearwinelist"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:text="Årgång"
+                                        android:textColor="@color/colorlila" />
+
+                                    <TextView
+                                        android:id="@+id/txtViewAmountWinelist"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:text="Antal"
+                                        android:textColor="@color/colorlila" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/wineListYear"
+                                        android:layout_width="200dp"
+                                        android:layout_height="85dp"
+                                        android:orientation="vertical"
+                                        android:padding="1dp"
+                                        android:text="årgång"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/colorPrimary" />
+
+                                    <TextView
+                                        android:id="@+id/wineListAmount"
+                                        android:layout_width="182dp"
+                                        android:layout_height="85dp"
+                                        android:text="Antal"
+                                        android:textAlignment="textStart"
+                                        android:textColor="@color/colorPrimary" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:padding="5dp"
+                                    android:layout_height="match_parent" >
+
+                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                        android:id="@+id/myWineListPlusBtn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="70dp"
+                                        android:layout_marginLeft="380dp"
+                                        android:clickable="true"
+                                        android:tint="@color/colorlila"
+                                        app:backgroundTintMode="add"
+                                        app:fabCustomSize="30dp"
+                                        app:maxImageSize="33dp"
+                                        app:srcCompat="@drawable/ic_icons8_plus"
+                                        tools:ignore="VectorDrawableCompat" />
+
+                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                        android:id="@+id/myWineListMinusBtn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="68dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:clickable="true"
+                                        android:tint="@color/colorlila"
+                                        app:backgroundTintMode="add"
+                                        app:fabCustomSize="30dp"
+                                        app:maxImageSize="30dp"
+                                        app:srcCompat="@drawable/ic_minus"
+                                        tools:ignore="VectorDrawableCompat" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </TableLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

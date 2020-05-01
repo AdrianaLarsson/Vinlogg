@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout3">
+
+
+    <ImageView
+        android:id="@+id/backBtnDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="569dp"
+        android:tint="@color/colorlila"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/imagviewDetail"
+                    android:layout_width="225dp"
+                    android:layout_height="399dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/vinebottle1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/namevinedetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorlila"
+                        android:textSize="20sp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="82dp">
+
+                            <TextView
+                                android:id="@+id/detailListCountry"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="TextView"
+                                android:textColor="@color/colorlila"
+                                android:textColorHighlight="@color/colorlila"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/detaillistRegion"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Region"
+                                android:textColor="@color/colorlila"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/districtDetail"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Distrikt"
+                                android:textColor="@color/colorlila"
+                                android:textSize="15sp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="239dp"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="202dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:text="Producent: " />
+
+                                <TextView
+                                    android:id="@+id/myWineListProducent"
+                                    android:layout_width="100dp"
+                                    android:layout_height="50dp"
+                                    android:text="Av"
+                                    android:textColor="@color/colorlila"
+                                    android:textSize="15sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="Alkoholhalt: " />
+
+                                <TextView
+                                    android:id="@+id/alcoholDetail"
+                                    android:layout_width="310dp"
+                                    android:layout_height="50dp"
+                                    android:text="%"
+                                    android:textColor="@color/colorlila"
+                                    android:textSize="15sp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp">
+
+                                <TextView
+                                    android:id="@+id/textView27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="Druvor: " />
+
+                                <TextView
+                                    android:id="@+id/grapesDetails"
+                                    android:layout_width="244dp"
+                                    android:layout_height="100dp"
+                                    android:text="TextView"
+                                    android:textColor="@color/colorlila" />
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="vertical">
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp">
+
+                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                        android:id="@+id/plusBtnDetail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="70dp"
+                                        android:layout_marginLeft="300dp"
+                                        android:clickable="true"
+                                        android:tint="@color/colorlila"
+                                        app:backgroundTintMode="add"
+                                        app:fabCustomSize="30dp"
+                                        app:maxImageSize="33dp"
+                                        app:srcCompat="@drawable/ic_icons8_plus"
+                                        tools:ignore="VectorDrawableCompat" />
+
+                                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                        android:id="@+id/minusBtnDetail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="57dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:clickable="true"
+                                        android:tint="@color/colorlila"
+                                        app:backgroundTintMode="add"
+                                        app:fabCustomSize="30dp"
+                                        app:maxImageSize="30dp"
+                                        app:srcCompat="@drawable/ic_minus"
+                                        tools:ignore="VectorDrawableCompat" />
+                                </TableRow>
+
+                            </TableLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="432dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtVHoldingdetail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Innehav"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtVdetailYear"
+                            android:textColor="@color/colorPrimary"
+
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:text="Årgång"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtVDetailShelve"
+                            android:layout_width="150dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_height="wrap_content"
+                            android:text="Hylla"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtVAmountDetail"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Antal"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/detailsideYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="350dp"
+                            android:paddingStart="20dp"
+                            android:textColor="@color/colorlila"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/detialSideshelveName"
+                            android:textColor="@color/colorlila"
+                            android:layout_width="154dp"
+                            android:layout_height="350dp"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/detialsideAmount"
+                            android:textColor="@color/colorlila"
+                            android:layout_width="wrap_content"
+                            android:layout_height="350dp"
+                            android:text="TextView" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

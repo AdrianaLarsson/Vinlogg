@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustNothing">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorMainBackground"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:isScrollContainer="false"
+            tools:context=".Fragments.SearchWineFragment">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="603dp"
+                    android:layout_height="896dp"
+                    android:background="@color/colorMainBackground"
+                    android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="MissingConstraints">
+
+                        <ImageButton
+                            android:id="@+id/captureImageBtn"
+                            android:layout_width="443dp"
+                            android:layout_height="119dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#FFF6ED"
+                            android:padding="1dp"
+                            android:scaleType="fitCenter"
+                            android:src="@android:drawable/ic_menu_camera"
+                            app:layout_constraintBottom_toTopOf="@+id/AutoCpTxVaddVineNameNew"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.46"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <EditText
+                            android:id="@+id/AutoCpTxVaddVineNameNew"
+                            android:layout_width="460dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            android:completionThreshold="1"
+                            android:focusableInTouchMode="true"
+                            android:hint="Lägg till nytt vin namn"
+                            android:inputType="textPersonName"
+                            android:linksClickable="true"
+                            android:nextFocusDown="@id/nameWineSearchSide"
+                            android:selectAllOnFocus="true"
+                            android:shadowColor="#000000"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorlila"
+                            android:textColorHint="@color/colorlila"
+                            android:textColorLink="#000000"
+                            android:textSize="15sp"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toTopOf="@+id/spinneCountriesNew"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/captureImageBtn" />
+
+
+                        <Spinner
+                            android:id="@+id/spinneCountriesNew"
+                            android:layout_width="460dp"
+                            android:layout_height="45dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toTopOf="@+id/spinneRegionsNew"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.495"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/AutoCpTxVaddVineNameNew" />
+
+                        <Spinner
+                            android:id="@+id/spinneRegionsNew"
+                            android:layout_width="460dp"
+                            android:layout_height="45dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            app:layout_constraintBottom_toTopOf="@+id/spinneDistrictsNew"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.496"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/spinneCountriesNew" />
+
+                        <Spinner
+                            android:id="@+id/spinneDistrictsNew"
+                            android:layout_width="460dp"
+                            android:layout_height="45dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            app:layout_constraintBottom_toTopOf="@+id/spinneGrapesNew"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/spinneRegionsNew" />
+
+                        <Button
+                            android:id="@+id/spinneGrapesNew"
+                            android:layout_width="460dp"
+                            android:layout_height="45dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            android:text="Välj druvor"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorlila"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/spinneDistrictsNew" />
+
+                        <EditText
+                            android:id="@+id/editTextGrapesNewProcent"
+                            android:layout_width="460dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            android:hint="Ange druva procent"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorlila"
+                            android:textColorHint="@color/colorlila"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toTopOf="@+id/editTextProcucer"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/spinneGrapesNew" />
+
+                        <EditText
+                            android:id="@+id/editTextProcucer"
+                            android:layout_width="460dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="68dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            android:hint="Av"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorlila"
+                            android:textColorHint="@color/colorlila"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.495"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/spinneGrapesNew" />
+
+                        <EditText
+                            android:id="@+id/editTextProcentWineNew"
+                            android:layout_width="460dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_input_search_vine"
+                            android:hint="Ange procent"
+                            android:inputType="number|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorlila"
+                            android:textColorHint="@color/colorlila"
+                            android:textColorLink="@color/colorMainBackground"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toTopOf="@+id/floatingActionButtonNew"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.504"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextProcucer" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/floatingActionButtonNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="200dp"
+                            android:layout_marginBottom="200dp"
+                            android:clickable="true"
+                            android:tint="@color/colorlila"
+                            app:backgroundTint="@color/colorlila"
+                            app:backgroundTintMode="add"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextProcentWineNew"
+                            app:rippleColor="@color/colorlila"
+                            app:srcCompat="@android:drawable/ic_input_add" />
+
+                        <ImageView
+                            android:id="@+id/backNewWineBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="859dp"
+                            android:tint="@color/colorlila"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/captureImageBtn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_back" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <ImageView
+        android:id="@+id/imageviewSpinner"
+        android:layout_width="47dp"
+        android:layout_height="39dp"
+        android:padding="5dp"
+        android:src="@drawable/usa" />-->
+
+
+
+    <TextView
+        android:id="@+id/textViewSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Välj ett land"
+        android:textAlignment="center"
+        android:textColor="@color/colorlila"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

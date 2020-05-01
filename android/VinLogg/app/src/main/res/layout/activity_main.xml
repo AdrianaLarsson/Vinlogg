@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentContainer"
+    android:background="@color/colorMainBackground">
+
+    <LinearLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/layout_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:padding="1dp"
+            android:background="@drawable/bottom_shape_navigation"/>
+
+    </LinearLayout>
+
+ <!--   <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginBottom="3dp"
+        android:background="#690000">
+
+    </View>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="957dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bottom_shape_navigation"
+        android:elevation="5dp"
+        android:foregroundGravity="bottom"
+        android:gravity="center"
+        android:layerType="hardware"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:padding="5dp"
+        app:itemIconSize="26dp"
+        app:menu="@menu/menu_items" />
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_shape_navigation"
+        android:padding="3dp"
+        />
+
+
+</RelativeLayout>
+
+    <!--
+        <LinearLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+
+        </LinearLayout>
+
+        &lt;!&ndash; Bottom Navigation Layout&ndash;&gt;
+        <LinearLayout
+            android:id="@+id/layout_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:padding="1dp"
+            android:background="@drawable/bottom_shape_navigation">
+
+            &lt;!&ndash; Top Border &ndash;&gt;
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#690000">
+
+            </View>
+
+            &lt;!&ndash; BottomNavigationView &ndash;&gt;
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                app:itemIconSize="26dp"
+                android:background="@drawable/bottom_shape_navigation"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:layout_gravity="bottom"
+                android:foregroundGravity="bottom"
+                android:layerType="hardware"
+                app:menu="@menu/menu_items"/>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_shape_navigation"
+                android:padding="3dp"
+                />
+
+        </LinearLayout>-->
+
+
+
+
+
+
+
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bottom_shape_navigation"
+        android:elevation="5dp"
+        android:layout_alignParentBottom="true"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:hapticFeedbackEnabled="true"
+        android:pointerIcon="context_menu"
+
+
+
+        android:padding="5dp">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/bottom_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:itemIconSize="26dp"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+           android:outlineAmbientShadowColor="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:foregroundGravity="bottom"
+            android:layerType="hardware"
+            app:menu="@menu/menu_items">
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+-->

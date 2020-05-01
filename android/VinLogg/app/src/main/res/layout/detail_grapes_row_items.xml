@@ -1,0 +1,70 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="5dp"
+    android:background="@color/colorMainBackground"
+    android:orientation="vertical"
+    android:theme="@style/Platform.MaterialComponents.Light">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="490dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:text="Druva"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+
+                    android:padding="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textViewSgrapeNamDetail"
+                    android:layout_width="493dp"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorlila" />
+
+                <TextView
+                    android:id="@+id/textViewGrapePercentDetail"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:padding="5dp"
+                    android:paddingEnd="5dp"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/colorlila" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

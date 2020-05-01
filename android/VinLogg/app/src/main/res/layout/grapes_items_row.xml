@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+
+    android:theme="@style/Platform.MaterialComponents.Light"
+    android:background="@color/colorMainBackground"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/cardVG"
+        app:cardCornerRadius="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="107dp">
+
+                <TextView
+                    android:id="@+id/grapeName"
+                    android:layout_width="553dp"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:text="Årgång"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

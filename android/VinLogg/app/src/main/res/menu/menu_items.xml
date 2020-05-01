@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/listing"
+        android:title="Min vin lista" />
+    <item
+
+        android:id="@+id/vine"
+        android:icon="@drawable/wine"
+        android:title="Sök vin"
+       />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Inställningar" />
+</menu>

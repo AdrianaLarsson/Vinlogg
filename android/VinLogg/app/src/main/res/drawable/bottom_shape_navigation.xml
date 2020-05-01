@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:bottomLeftRadius="5dp"
+        android:topLeftRadius="1dp"
+        android:topRightRadius="1dp"
+        android:bottomRightRadius="2dp"
+        />
+
+    <padding
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp"
+        />
+
+    <corners
+        android:bottomRightRadius="@dimen/cardview_compat_inset_shadow"
+        android:topRightRadius="@dimen/cardview_default_elevation"
+        android:bottomLeftRadius="@dimen/cardview_compat_inset_shadow"
+       android:radius="@dimen/cardview_compat_inset_shadow"/>
+    <gradient
+        android:gradientRadius="@dimen/cardview_default_radius"
+        android:endColor="@color/colorPrimary"/>
+
+
+
+    <solid android:color="@android:color/white"
+        />
+
+
+
+</shape>
